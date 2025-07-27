@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            padding:20px;
+            background-color: #f0f8ff;
+            font-family: arial;
+
+        }
+        button{
+            padding:15px 30px;
+            font-size: 16px;
+            margin:30px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .transition-btn{
+            background-color: royalblue;
+            color: white;
+            transition:transform 0.3s ease,
+                       background-color 0.3s ease;
+
+        }
+        .transition-btn:hover{
+            transform:scale(1.1)  translateY(-10px);
+            background-color: blue;
+        }
+        @keyframes bounce{
+            0%,100%{transform:translateY(0);}
+            50%{transform:translateY(-15px);}
+        }
+        .animation-btn{
+            background-color: seagreen;
+            color:white;
+            animation:bounce 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bounce button with transitions & animations</h1>
+    <button class="transition-btn">Hover me(transition)</button>
+    <button class="animation-btn">auto bounce(animation)</button>
+</body>
+</html>
